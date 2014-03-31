@@ -3,5 +3,11 @@
   <body>
   <h1>Welcome</h1>
   <a href="/products/new">Add a Product</a>
+  <ul>
+    <% PRODUCTS_ARRAY.each do |product| %>
+   <li> <%= product %>
+      <% end  %>
+   </li>
+  </ul>
   </body>
 </html>

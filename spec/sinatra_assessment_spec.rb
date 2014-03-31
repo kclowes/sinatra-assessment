@@ -11,5 +11,6 @@ feature 'sinatra assessment' do
     click_link 'Add a Product'
     fill_in('new_product', :with => 'Cow')
     click_button 'Create Product'
+    expect(page).to have_content('Cow')
   end
 end

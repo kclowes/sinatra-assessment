@@ -9,5 +9,7 @@ feature 'sinatra assessment' do
     visit '/'
     expect(page).to have_content('Welcome')
     click_link 'Add a Product'
+    fill_in('new_product', :with => 'Cow')
+    click_button 'Create Product'
   end
 end

@@ -6,4 +6,8 @@ class App < Sinatra::Application
     erb :index
   end
 
+  get '/products/new' do
+    erb :new_product
+  end
+
 end
